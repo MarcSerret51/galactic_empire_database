@@ -1,0 +1,9 @@
+name: EmpireEnviroment
+channels:
+  - defaults
+dependencies:
+  - cherrypy=14.0.1
+  - pip=9.0.1
+  - python=3.6.4
+  - statsmodels=0.8.0
+  - requests

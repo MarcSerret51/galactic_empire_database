@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        crossorigin="anonymous"></script>
+    <script src="/static/scripts/rebelDataBase.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Empire rebel database</title></head>
+
+<body>
+    <noscript>
+        <p class="display-1">Enable JavaScript or use a modern browser to use the rebel database</p>
+    </noscript>
+    <h1>Long live to Galactic Empire</h1>
+    <div class="container">
+        <form id="rebelForm">
+            <div class="form-group">
+                <label for="rName">Rebel name</label>
+                <input type="text" class="form-control" id="rName" aria-describedby="nameHelp" placeholder="Enter name" value="2 3">
+                <small id="nameHelp" class="form-text text-muted">e.g. Han Solo</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Planet name</label>
+                <input type="text" class="form-control" id="rPlanet" placeholder="Enter planet name" aria-describedby="planetHelp">
+                <small id="planetHelp" class="form-text text-muted">e.g. Yavin 4</small>
+            </div>
+            <button type="button" class="btn btn-primary" id="uploadRebel" onclick="validateForm()">Upload rebel</button>
+        </form>
+    </div>
+</body>
+
+</html>
