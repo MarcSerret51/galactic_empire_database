@@ -16,6 +16,12 @@ function alphanumericChecker(toValidate) {
         return false;
     }
 }
+/**
+ * @summary. Checks if a string length is between 2 and 50
+ * @param {string} toValidate String to check 
+ * 
+ * @returns {boolean} true if string is correct or false otherwise
+ */
 function lengthChecker(toValidate) {
     if (toValidate.length > 2 && toValidate.length < 50) {
         return true;
@@ -24,14 +30,25 @@ function lengthChecker(toValidate) {
         return false;
     }
 }
+/**
+ * @summary. Sends a request to upload the rebel
+ * @description Sends a request with the rebel name and the planet name to the server...
+ * @param {string} name name of the rebel to add
+ * @param {string} planet name of the planet to add
+ * @returns {boolean} true if string is correct or false otherwise
+ */
 function sendRebelToServer(name, planet) {
-    $.post('/addRebel', { "name": name, "planet": planet })
+    $.get('/addRebel', {"name": name, "planet": planet})
         .done(function (result) {
             console.log("Uploaded!!!!");
         }).fail(function (result) {
+            console.log(result)
             console.log("Upload fail");
         });
 }
+/**
+ * WIP
+ */
 function validateForm() {
     errorArray = [];
     let name = $("#rName").val().trim();
@@ -46,5 +63,4 @@ function validateForm() {
     }
 }
 $(document).ready(function () {
-    validateForm();
 });

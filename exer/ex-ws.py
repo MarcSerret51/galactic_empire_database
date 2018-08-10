@@ -31,16 +31,35 @@ import cherrypy
 from pathlib import Path
 from cherrypy.lib.static import serve_file
 
+
+def writeToFile(name, planet):
+    """Writes the name of the rebel and 
+    the planet in a text file"""
+    filee = open("lmao.txt", "a")
+    filee.write(name + ";" + planet + "\n")
+    filee.close()
+
+
 # THIS PATH MUST BE DEFINED IN DEVELOPMENT ENVIRONMENTS WHERE FLAME
 # WAS NOT INSTALLED AS A PACKAGE
-class FlamePredict(object):
+class EmpireIndex(object):
     @cherrypy.expose
     def index(self):
         return open('./templates/index.html')
-        # return open(os.path.split(os.path.realpath(__file__))[0]+ '/templates/index.html') TODO: Make it works
+
+@cherrypy.expose
+class UploadRebel(object):
+    def GET(self, name, planet):
+        writeToFile(name, planet)
+        return "writed"
 
 if __name__ == '__main__':
     conf = {
+        '/addRebel': {
+            'request.dispatch': cherrypy.dispatch.MethodDispatcher(),
+            'tools.response_headers.on': True,
+            'tools.response_headers.headers': [('Content-Type', 'text/plain')]
+        },
         '/': {
             'tools.sessions.on': False,
             'tools.staticdir.root': os.path.abspath(os.getcwd())
@@ -48,13 +67,9 @@ if __name__ == '__main__':
         '/static': {
             'tools.staticdir.on': True,
             'tools.staticdir.dir': './public',
-        },
-        'global' : {
-            'server.socket_host' : '0.0.0.0',
-            'server.socket_port' : 8080,
-            'server.thread_pool' : 8,
         }
     }
 
-    webapp = FlamePredict()
+    webapp = EmpireIndex()
+    webapp.addRebel = UploadRebel()
     cherrypy.quickstart(webapp, '/', conf)
