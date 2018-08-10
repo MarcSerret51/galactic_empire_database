@@ -28,16 +28,20 @@ import tempfile
 import json
 import re
 import cherrypy
+import datetime as time
 from pathlib import Path
 from cherrypy.lib.static import serve_file
-
 
 def writeToFile(name, planet):
     """Writes the name of the rebel and 
     the planet in a text file"""
-    filee = open("lmao.txt", "a")
-    filee.write(name + ";" + planet + "\n")
-    filee.close()
+    try:
+        filee = open("../../test/lmao.txt", "a")
+        filee.write("Rebel " + name + " on " + planet + " at "+ str(time.datetime.now()) +"\n")
+        filee.close()
+        return "1"  #CherryPy can't return integer
+    except IOError:
+        return ("PERMERROR", "Permission denied")
 
 
 # THIS PATH MUST BE DEFINED IN DEVELOPMENT ENVIRONMENTS WHERE FLAME
@@ -49,9 +53,12 @@ class EmpireIndex(object):
 
 @cherrypy.expose
 class UploadRebel(object):
-    def GET(self, name, planet):
-        writeToFile(name, planet)
-        return "writed"
+    def GET(self, name = "", planet = ""):
+        if name == "" or planet == "":
+            return ("FIELDERROR", "Please fill the two fields")
+        result = writeToFile(name, planet)
+        return result
+
 
 if __name__ == '__main__':
     conf = {

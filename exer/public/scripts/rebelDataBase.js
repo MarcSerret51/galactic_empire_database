@@ -1,7 +1,7 @@
 let errorArray = [];
 /**
  * @summary. Checks if a string is alphanumeric
- * @description. Check if a string is alphanumeric using a regex
+ * @description. Check if a string is alphanumeric (spaces allowed) using a regex
  * @param {string} toValidate String to check 
  * 
  * @returns {boolean} true if string is alphanumeric or false otherwise
@@ -19,7 +19,6 @@ function alphanumericChecker(toValidate) {
 /**
  * @summary. Checks if a string length is between 2 and 50
  * @param {string} toValidate String to check 
- * 
  * @returns {boolean} true if string is correct or false otherwise
  */
 function lengthChecker(toValidate) {
@@ -39,8 +38,14 @@ function lengthChecker(toValidate) {
  */
 function sendRebelToServer(name, planet) {
     $.get('/addRebel', {"name": name, "planet": planet})
-        .done(function (result) {
-            console.log("Uploaded!!!!");
+    .done(function (result) {
+        if (result.includes("PERMERROR")){
+            console.error("Permission error, try again later");
+        } else if (result.includes("FIELDERROR")) {
+            console.error("Please fill the two fields");
+        } else {
+           console.log("Uploaded!!!!");
+        }
         }).fail(function (result) {
             console.log(result)
             console.log("Upload fail");
