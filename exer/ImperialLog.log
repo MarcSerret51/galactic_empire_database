@@ -1,0 +1,114 @@
+2018-08-11 13:54:21,861 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 13:58:10,267 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 13:58:10,272 - ImperialDatabase - INFO - Sending: 1
+2018-08-11 13:58:10,272 - ImperialDatabase - INFO - Sending: 1
+2018-08-11 14:01:36,668 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:01:36,672 - ImperialDatabase - INFO - Sending: 1to: 127.0.0.1
+2018-08-11 14:01:36,672 - ImperialDatabase - INFO - Sending: 1to: 127.0.0.1
+2018-08-11 14:05:09,557 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:05:10,921 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:05:10,921 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:05:45,273 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:05:45,274 - ImperialDatabase - INFO - Permission error
+2018-08-11 14:06:20,671 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:06:20,672 - ImperialDatabase - INFO - Permission error
+2018-08-11 14:06:20,672 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:06:20,672 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:10,924 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:10,925 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:10,925 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:25,786 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:25,786 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:25,786 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:25,787 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:25,787 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:25,787 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:25,787 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:27,378 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:27,378 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:27,378 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:27,378 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:27,378 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:27,379 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:27,379 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:27,379 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:27,379 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:27,379 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:27,379 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:28,362 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:28,362 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:28,362 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:28,362 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:28,362 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:28,362 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:28,362 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:28,362 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:28,362 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:28,362 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:28,362 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:28,362 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:28,362 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:28,362 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:28,362 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:35,505 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:35,505 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:35,505 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:35,505 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:35,505 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:35,505 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:35,505 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:35,505 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:35,505 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:07:35,506 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:35,506 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:35,506 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:35,506 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:35,506 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:35,506 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:35,506 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:35,506 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:35,506 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:07:35,506 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:08:33,783 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:08:33,783 - ImperialDatabase - ERROR - Permission error
+2018-08-11 14:08:33,783 - ImperialDatabase - ERROR - Permission error
+2018-08-11 14:08:33,783 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:08:33,783 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:09:45,579 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:09:45,579 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:09:45,579 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:09:45,579 - ImperialDatabase - ERROR - Permission error
+2018-08-11 14:09:45,579 - ImperialDatabase - ERROR - Permission error
+2018-08-11 14:09:45,579 - ImperialDatabase - ERROR - Permission error
+2018-08-11 14:09:45,579 - ImperialDatabase - ERROR - Permission error
+2018-08-11 14:09:45,579 - ImperialDatabase - ERROR - Permission error
+2018-08-11 14:09:45,579 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:09:45,579 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:09:45,579 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:09:45,579 - ImperialDatabase - INFO - Sending: PERMERRORto: 127.0.0.1
+2018-08-11 14:09:59,642 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:09:59,642 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:09:59,642 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:09:59,642 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:09:59,642 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:09:59,645 - ImperialDatabase - INFO - Sending: 1to: 127.0.0.1
+2018-08-11 14:09:59,645 - ImperialDatabase - INFO - Sending: 1to: 127.0.0.1
+2018-08-11 14:09:59,645 - ImperialDatabase - INFO - Sending: 1to: 127.0.0.1
+2018-08-11 14:09:59,645 - ImperialDatabase - INFO - Sending: 1to: 127.0.0.1
+2018-08-11 14:09:59,645 - ImperialDatabase - INFO - Sending: 1to: 127.0.0.1
+2018-08-11 14:09:59,645 - ImperialDatabase - INFO - Sending: 1to: 127.0.0.1
+2018-08-11 14:10:19,873 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:10:19,873 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:10:19,873 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:10:19,873 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:10:19,873 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:10:19,873 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:10:19,873 - ImperialDatabase - INFO - Request received from 127.0.0.1
+2018-08-11 14:10:19,876 - ImperialDatabase - INFO - Sending: 1to: 127.0.0.1
+2018-08-11 14:10:19,876 - ImperialDatabase - INFO - Sending: 1to: 127.0.0.1
+2018-08-11 14:10:19,876 - ImperialDatabase - INFO - Sending: 1to: 127.0.0.1
+2018-08-11 14:10:19,876 - ImperialDatabase - INFO - Sending: 1to: 127.0.0.1
+2018-08-11 14:10:19,876 - ImperialDatabase - INFO - Sending: 1to: 127.0.0.1
+2018-08-11 14:10:19,876 - ImperialDatabase - INFO - Sending: 1to: 127.0.0.1
+2018-08-11 14:10:19,876 - ImperialDatabase - INFO - Sending: 1to: 127.0.0.1
+2018-08-11 14:10:19,876 - ImperialDatabase - INFO - Sending: 1to: 127.0.0.1

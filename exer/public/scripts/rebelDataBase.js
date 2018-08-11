@@ -43,7 +43,10 @@ function sendRebelToServer(name, planet) {
             console.error("Permission error, try again later");
         } else if (result.includes("FIELDERROR")) {
             console.error("Please fill the two fields");
-        } else {
+        } else if (result.includes("CONFIGERROR")){
+            console.error("Config file not found, try again later");
+        } 
+        else {
            console.log("Uploaded!!!!");
         }
         }).fail(function (result) {

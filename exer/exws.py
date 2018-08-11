@@ -1,25 +1,9 @@
 
 #! -*- coding: utf-8 -*-
 
-##    Description    Flame web-service
-##
 ##    Authors:       Marc Serret i Garcia (marcserret@live.com)
 ##
 ##    Copyright 2018 Marc Serret i Garcia
-##
-##    This file is part of Flame
-##
-##    Flame is free software: you can redistribute it and/or modify
-##    it under the terms of the GNU General Public License as published by
-##    the Free Software Foundation version 3.
-##
-##    Flame is distributed in the hope that it will be useful,
-##    but WITHOUT ANY WARRANTY; without even the implied warranty of
-##    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-##    GNU General Public License for more details.
-##
-##    You should have received a copy of the GNU General Public License
-##    along with Flame. If not, see <http://www.gnu.org/licenses/>.
 
 import os
 import sys
@@ -31,21 +15,9 @@ import cherrypy
 import datetime as time
 from pathlib import Path
 from cherrypy.lib.static import serve_file
+from logger import infoLog
+from fileWriter import writeToFile
 
-def writeToFile(name, planet):
-    """Writes the name of the rebel and 
-    the planet in a text file"""
-    try:
-        filee = open("../../test/lmao.txt", "a")
-        filee.write("Rebel " + name + " on " + planet + " at "+ str(time.datetime.now()) +"\n")
-        filee.close()
-        return "1"  #CherryPy can't return integer
-    except IOError:
-        return ("PERMERROR", "Permission denied")
-
-
-# THIS PATH MUST BE DEFINED IN DEVELOPMENT ENVIRONMENTS WHERE FLAME
-# WAS NOT INSTALLED AS A PACKAGE
 class EmpireIndex(object):
     @cherrypy.expose
     def index(self):
@@ -56,7 +28,9 @@ class UploadRebel(object):
     def GET(self, name = "", planet = ""):
         if name == "" or planet == "":
             return ("FIELDERROR", "Please fill the two fields")
+        infoLog("Request received from " + cherrypy.request.remote.ip)
         result = writeToFile(name, planet)
+        infoLog("Sending: " + result[0] + "to: " + cherrypy.request.remote.ip)
         return result
 
 
