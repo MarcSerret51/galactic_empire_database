@@ -23,6 +23,9 @@ def writeToFile(name, planet):
         return ("PERMERROR", "Permission denied")
 
 def getConfig():
+    """
+    Get the config file and retrieve the data
+    """
     try:
         with open('config.json') as conf:
             conf = json.load(conf)

@@ -7,6 +7,9 @@ let errorArray = [];
  * @returns {boolean} true if string is alphanumeric or false otherwise
  */
 function alphanumericChecker(toValidate) {
+    if (toValidate.length === 0) {
+        return true;                        // Contar   el campo vacio como correcto para que pete en la length y se muestre su mensaje de error.
+    }
     const regex = /^[A-Za-z0-9 ]+$/;
     if (toValidate.match(regex)) {
         return true;
@@ -25,7 +28,7 @@ function lengthChecker(toValidate) {
     if (toValidate.length > 2 && toValidate.length < 50) {
         return true;
     } else {
-        errorArray.push("Name lenght error");
+        errorArray.push("Lenght must be between 2 and 50");
         return false;
     }
 }
@@ -39,19 +42,25 @@ function lengthChecker(toValidate) {
 function sendRebelToServer(name, planet) {
     $.get('/addRebel', {"name": name, "planet": planet})
     .done(function (result) {
+        $("#console").empty();
         if (result.includes("PERMERROR")){
-            console.error("Permission error, try again later");
+            let text = $("<p class='text-danger'></p>").text("Permission error, try again later");
+            $("#console").append(text);
         } else if (result.includes("FIELDERROR")) {
-            console.error("Please fill the two fields");
+            let text = $("<p class='text-danger'></p>").text("Please fill the two fields");
+            $("#console").append(text);
         } else if (result.includes("CONFIGERROR")){
-            console.error("Config file not found, try again later");
+            let text = $("<p class='text-danger'></p>").text("Config file not found, try again later");
+            $("#console").append(text);
         } 
         else {
-           console.log("Uploaded!!!!");
+           let text = $("<p class='text-primary'></p>").text("Rebel uploaded");
+            $("#console").append(text);
         }
         }).fail(function (result) {
-            console.log(result)
-            console.log("Upload fail");
+            $("#console").empty();
+            let text = $("<p class='text-danger'></p>").text("Something went wrong, try again later");
+            $("#console").append(text);
         });
 }
 /**
@@ -61,13 +70,15 @@ function validateForm() {
     errorArray = [];
     let name = $("#rName").val().trim();
     let planet = $("#rPlanet").val().trim();
-    console.log(name);
-    if (alphanumericChecker(name) && lengthChecker(name)) {
-        console.log("bien");
+    if (alphanumericChecker(name) && lengthChecker(name) && alphanumericChecker(planet) && lengthChecker(planet)) {
         sendRebelToServer(name, planet);
     } else {
-        console.log(errorArray);
-        console.log("mal");
+        $("#console").empty();
+        errorArray.forEach(function(error, index, array){
+            let text = $("<p class='text-danger'></p>").text(error);
+            $("#console").append(text);
+        });
+        
     }
 }
 $(document).ready(function () {

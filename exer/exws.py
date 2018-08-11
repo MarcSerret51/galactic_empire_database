@@ -26,6 +26,11 @@ class EmpireIndex(object):
 @cherrypy.expose
 class UploadRebel(object):
     def GET(self, name = "", planet = ""):
+        """
+        Gets the name of the rebel and the planet name and writes the
+        the data.
+        Checks if the args are correct and writes info in the log
+        """
         if name == "" or planet == "":
             return ("FIELDERROR", "Please fill the two fields")
         infoLog("Request received from " + cherrypy.request.remote.ip)
