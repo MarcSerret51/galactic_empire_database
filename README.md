@@ -2,7 +2,7 @@
 
 This app allows to save the rebel data in a txt file.
 Uses [CherryPy](https://cherrypy.org/) in back-end and simple JavaScript in front-end.
-**Only tested on Windows 10 **
+**Only tested on Windows 10**
 
 ## Installation
 
@@ -44,19 +44,19 @@ Execute the web service
 python exws.py
 ```
 
-##Main features
+## Main features
 - Back-end logging system
 - Field validations
 - Configuration file
 - Lord Vader approval
 
-##Configuration file
+## Configuration file
 Please write the route like this
 ```
 "path": "C:/Users/marc/Desktop/galactic_empire_database/exer/Database.txt"
 ```
 
-##Unit tests
+## Unit tests
 Just type in the directory
 ```bash
 python unitTests.py
