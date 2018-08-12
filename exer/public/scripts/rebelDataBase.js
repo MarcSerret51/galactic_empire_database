@@ -34,7 +34,7 @@ function lengthChecker(toValidate) {
 }
 /**
  * @summary. Sends a request to upload the rebel
- * @description Sends a request with the rebel name and the planet name to the server...
+ * @description Sends a request with the rebel name and the planet name to the server and prints the errors
  * @param {string} name name of the rebel to add
  * @param {string} planet name of the planet to add
  * @returns {boolean} true if string is correct or false otherwise
@@ -64,7 +64,7 @@ function sendRebelToServer(name, planet) {
         });
 }
 /**
- * WIP
+ * @summary. Validates all and launch the AJAX request and prints the errors
  */
 function validateForm() {
     errorArray = [];
